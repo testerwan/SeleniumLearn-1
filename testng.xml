@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Maven_Test" parallel="tests" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="cases.BrowserTest2"/>
+            <parameter name="driverPath" value="/Users/wan/IdeaProjects/SeleniumLearn/src/main/resources/chromedriver"/>
+            <parameter name="url" value="https://www.baidu.com/"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="extentx.ExtentTestNGITestListener"/>
+    </listeners>
+</suite>
